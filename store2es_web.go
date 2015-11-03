@@ -87,7 +87,7 @@ func StoreDistance(val string) string {
 
 func main() {
 
-	ElasticClient, err := elastic.NewClient(elastic.SetURL("http://elasticsearch.zoomaws.com:9200"))
+	ElasticClient, err := elastic.NewClient()
 	if err != nil {
 		fmt.Println( "ES start error: ", err)
 	} else {
